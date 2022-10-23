@@ -1,0 +1,9 @@
+function Redirect(){
+    window.location = login.html
+}
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
