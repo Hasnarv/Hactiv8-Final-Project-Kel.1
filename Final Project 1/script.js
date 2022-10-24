@@ -1,6 +1,7 @@
-function Redirect(){
-    window.location = login.html
+function Redirect() {
+  window.location = "program.html";
 }
+
 const myModal = document.getElementById('myModal')
 const myInput = document.getElementById('myInput')
 
