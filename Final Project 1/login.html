@@ -26,21 +26,20 @@
                         <p>Please login to your account</p>
       
                         <div class="form-outline mb-4">
-                            <label class="form-label" for="form2Example11">Username</label>
-                            <input type="email" id="form2Example11" class="form-control"
-                            placeholder="Phone number or email address" />
+                          <label for="username">Username: </label>
+                          <input type="text" name="username" id="username" /> <br/>                
                         </div>
       
                         <div class="form-outline mb-4">
-                            <label class="form-label" for="form2Example22">Password</label>
-                            <input type="password" id="form2Example22" class="form-control" />
+                          <label for="password">Password: </label>
+                          <input type="password" name="password" id="password" /> <br/><br/>                
                         </div>
       
                         <div class="text-center pt-1 mb-5 pb-1">
-                          <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log
-                            in</button>
-                          <a class="text-muted" href="#!">Forgot password?</a>
+                          <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit" id="btn-login">Login</button>
                         </div>
+
+                        <div id="result"></div>
       
                       </form>
       
@@ -49,7 +48,7 @@
                   <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
                     <div class="text-white px-3 py-4 p-md-5 mx-md-4">
                       <h4 class="mb-4">Upgrade your coding skill with GROW</h4>
-                      <p class="small mb-0">Let's learn coding with talented programmers.Let's learn coding with talented programmers.Let's learn coding with talented programmers.Let's learn coding with talented programmers.Let's learn coding with talented programmers.</p>
+                      <p class="small mb-0">Let's learn programming with GROW, we have reliable instructors from the best colleges like Hardvard, Stanford, and many more world's leading universities. Gain the essential coding skills needed for frontend and/or backend web development, mobile developers, iOS, Android, and more.</p>
                     </div>
                   </div>
                 </div>
@@ -58,5 +57,96 @@
           </div>
         </div>
       </section>
+
+      <script>
+        let btnLogin = document.getElementById('btn-login');
+
+        let data_user = [
+            {
+                username: 'rizki',
+                password: '12345',
+                nim: '99382',
+                nama: 'Rizki Cahyana',
+                jurusan: 'Pendidikan Ilmu Komputer'
+            },
+            {
+                username: 'indra',
+                password: '12345',
+                nim: '99382',
+                nama: 'Indra Rohman',
+                jurusan: 'Teknik Industri'
+            },
+            {
+                username: 'rahmat',
+                password: '12345',
+                nim: '99382',
+                nama: 'Rahmat Affandi',
+                jurusan: 'Elektronika Instrumentasi'
+            }
+        ];
+
+        console.log(data_user);
+
+        btnLogin.addEventListener('click', function(e){
+            e.preventDefault();
+            
+            let username = document.getElementById('username').value;
+            let password = document.getElementById('password').value;
+            let status = false;
+
+            for(let i = 0; i < data_user.length; i++){
+                if(data_user[i].username === username && data_user[i].password === password){
+                    status = true;
+                    // simpan ke localStorage
+                    // localStorage.setItem('nama_key', 'nilai');
+                    localStorage.setItem('nim', data_user[i].nim);
+                    localStorage.setItem('nama', data_user[i].nama);
+                    localStorage.setItem('jurusan', data_user[i].jurusan);
+
+                    // simpan ke cookies
+                    document.cookie = 'a=abc';
+                    document.cookie = 'nim='+data_user[i].nim;
+                    document.cookie = 'nama='+data_user[i].nama;
+                    document.cookie = 'jurusan='+data_user[i].jurusan;
+
+                    break;
+                }
+            }
+
+            if(status){ // status == true
+                // get data dari localStorage
+                // localStorage.getItem('nama_key');
+                console.log('nim: ' + localStorage.getItem('nim'));
+                console.log('nama: ' + localStorage.getItem('nama'));
+                console.log('jurusan: ' + localStorage.getItem('jurusan'));
+
+                displayResult(status);
+
+            }
+
+            /*
+                extras:
+                hapus data di localStorage
+                localStorage.removeItem('nama_key');
+            */
+
+        });
+
+        function displayResult(status){
+            document.getElementById('result').innerText = status;
+            setTimeout(() => {
+                alert('Anda akan dialihkan ke Dashboard..');
+                
+                window.location = 'http://127.0.0.1:5500/Hactiv8-Final-Project-Kel.1/Final%20Project%201/dashboard.html';
+            }, 3000);
+        }
+
+        // displayResult(status);
+        // setTimeout(displayResult, 1000);
+
+    </script>
+
 </body>
 </html>
+
+

@@ -60,7 +60,7 @@ body {
   
   #header .logo h1 a,
   #header .logo h1 a:hover {
-    color: #222222;
+    color: #b21bfd;
     text-decoration: none;
   }
   
@@ -334,12 +334,12 @@ body {
     font-size: 24px;
   }
   
-  #hero .btn-price {
+  #hero .btn-get-started {
     font-family: "Raleway", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    width: 25%;
     letter-spacing: 1px;
+    display: inline-block;
     padding: 10px 30px;
     border-radius: 50px;
     transition: 0.5s;
@@ -347,7 +347,7 @@ body {
     border: 2px solid #821cb5;
   }
   
-  #hero .btn-price:hover {
+  #hero .btn-get-started:hover {
     background: linear-gradient(to right, #821cb5, 
     #e54686);;
     color: #fff;
