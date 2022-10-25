@@ -539,12 +539,10 @@ body {
 }
 
 .about img{
-  width: 100%;
-  border-radius: 20px;
-}
-
-.about .animated {
-  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  width: 120%;
+  margin-top: -100px;
+  margin-left: -100px;
+  border-radius: 15px;
 }
 
 /*--------------------------------------------------------------
