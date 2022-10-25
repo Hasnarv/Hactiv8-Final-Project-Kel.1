@@ -1,5 +1,5 @@
 function Redirect() {
-  window.location = "program.html";
+  window.location = "courses.html";
 }
 
 const myModal = document.getElementById('myModal')
