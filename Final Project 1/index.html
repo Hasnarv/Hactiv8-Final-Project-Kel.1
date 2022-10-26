@@ -78,8 +78,8 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <table class="table table-striped">
-                    <thead>
+                  <table id="course" class="table table-striped">
+                    <!-- <thead>
                       <tr>
                         <th>Program</th>
                         <th>Price</th>
@@ -98,7 +98,7 @@
                         <td>IT Support</td>
                         <td>Rpxx.xxx.xxx</td>
                       </tr>
-                    </tbody>
+                    </tbody> -->
                   </table>
                 </div>
                 <div class="modal-footer">
@@ -139,11 +139,11 @@
               so that the material can be accessed anytime and anywhere.
               The presentation of the material is carried out by qualified instructors and experts in their fields.
               GROW can solve problems that are usually experienced by a programmer as bellow :
-              <h6>You are looking for a job but haven't experience</h6> 
-              <h6>You don't master perfectly one of the programming languages</h6> 
-              <h6>You want to add a portofolio to apply for a job</h6> 
-              Improve your skills with experience working on industrial-scale projects
-              and you can include it in your CV as work experience.
+            <h6>You are looking for a job but haven't experience</h6>
+            <h6>You don't master perfectly one of the programming languages</h6>
+            <h6>You want to add a portofolio to apply for a job</h6>
+            Improve your skills with experience working on industrial-scale projects
+            and you can include it in your CV as work experience.
           </div>
         </div>
 
@@ -169,10 +169,10 @@
               <h5 class="card-title"><a href="">Tips belajar bahasa pemrograman</a></h5>
               <p class="card-text">Apakah belajar bahasa pemrograman itu sulit? Jawabannya tergantung.
                 Mudah atau sulitnya menguasai suatu keterampilan dikembalikan pada motivasi kamu mempelajarinya.
-                Bahasa pemrograman sebetulnya menyerupai seni. 
-                Kamu bisa menggunakan satu atau merangkai beberapa algoritma yang saling terhubung dengan bahasa pemrograman tertentu sampai terbentuk sebuah program.</p>
-              <div class="read-more"><a href="blog.html"><i
-                    class="bi bi-arrow-right"></i> Read More</a></div>
+                Bahasa pemrograman sebetulnya menyerupai seni.
+                Kamu bisa menggunakan satu atau merangkai beberapa algoritma yang saling terhubung dengan bahasa
+                pemrograman tertentu sampai terbentuk sebuah program.</p>
+              <div class="read-more"><a href="blog.html"><i class="bi bi-arrow-right"></i> Read More</a></div>
             </div>
           </div>
         </div>
@@ -180,11 +180,13 @@
           <div class="card" style='background-image: url("img/blog-2.jpg");' data-aos="fade-up" data-aos-delay="200">
             <div class="card-body">
               <h5 class="card-title"><a href="">Bahasa pemrograman populer</a></h5>
-              <p class="card-text">Seiring dengan meningkatnya demand terhadap web dan software development seperti sekarang ini, menguasai bahasa pemrograman adalah salah satu skill yang sudah pasti akan membuka banyak sekali peluang bagi Anda.
-                Dengan mempelajari bahasa coding, Anda bisa mengasah kemampuan teknis serta pemecahan masalah, dan tentu saja mendapatkan peluang kerja dengan gaji tinggi.
+              <p class="card-text">Seiring dengan meningkatnya demand terhadap web dan software development seperti
+                sekarang ini, menguasai bahasa pemrograman adalah salah satu skill yang sudah pasti akan membuka banyak
+                sekali peluang bagi Anda.
+                Dengan mempelajari bahasa coding, Anda bisa mengasah kemampuan teknis serta pemecahan masalah, dan tentu
+                saja mendapatkan peluang kerja dengan gaji tinggi.
                 Nah, saat ini, ada lebih dari 700 bahasa pemrograman yang bisa Anda pelajari. </p>
-              <div class="read-more"><a href="blog2.html"><i
-                    class="bi bi-arrow-right"></i> Read More</a></div>
+              <div class="read-more"><a href="blog2.html"><i class="bi bi-arrow-right"></i> Read More</a></div>
             </div>
           </div>
 
@@ -198,9 +200,7 @@
                 app store.
                 This means most of an Android Developer’s job revolves around creating the apps we use on our
                 smartphones and tablets.</p>
-              <div class="read-more"><a
-                  href="blog.html"><i
-                    class="bi bi-arrow-right"></i> Read More</a></div>
+              <div class="read-more"><a href="blog.html"><i class="bi bi-arrow-right"></i> Read More</a></div>
             </div>
           </div>
         </div>
@@ -213,9 +213,7 @@
                 meaning Front end development, Back end development, Database, Server, API, and version controlling
                 systems.
                 Hence, the name “Full Stack” Developer</p>
-              <div class="read-more"><a
-                  href="blog.html"><i
-                    class="bi bi-arrow-right"></i> Read More</a></div>
+              <div class="read-more"><a href="blog.html"><i class="bi bi-arrow-right"></i> Read More</a></div>
             </div>
           </div>
         </div>
@@ -647,6 +645,27 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="script.js"></script>
+  <script>
+    const course = document.getElementById("course");
+    const courseList = [
+      ['Front-End Developer Program', 'Rpxx.xxx.xxx'],
+      ['Back-End Developer Program', 'Rpxx.xxx.xxx'],
+      ['Android Developer Program', 'Rpxx.xxx.xxx'],
+      ['IOS Developer Program', 'Rpxx.xxx.xxx']
+    ];
+
+    const headerRow = course.createTHead().insertRow();
+    const tableBody = course.createTBody();
+    headerRow.insertCell().textContent = 'Course';
+    headerRow.insertCell().textContent = 'Price';
+
+    courseList.forEach(function (a) {
+            let newCourse = tableBody.insertRow();
+            newCourse.insertCell().textContent = a[0];
+            newCourse.insertCell().textContent = a[1];
+            course.appendChild(newCourse);
+        })
+  </script>
 
   <!-- <script>
     function Redirect() {
