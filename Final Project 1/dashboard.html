@@ -19,28 +19,6 @@
 </body>
 </html> -->
 
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-</head>
-<body>
-    <h1>Selamat datang, <span id="nama"></span>!</h1>
-
-    <script>
-        let nama = localStorage.getItem('nama');
-
-        document.getElementById('nama').innerHTML = nama;
-
-    </script>    
-
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -154,21 +132,88 @@
             </div>
         </section><!-- End Hero -->
 
+        <!-- ======= Portfolio Details Section ======= -->
+        <section id="portfolio-details" class="portfolio-details">
+            <div class="container">
+
+                <div class="row">
+                    <h3 class="bold text-center mb-4">Journey Map Study For Frond-End Developer</h3>
+                    <div class="alur row">
+                        <div class="card alur-program" style="width: 18rem;">
+                            <img src="img/portfolio/portfolio-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="bold" id="namaKelas">Belajar Dasar Javascript</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" >add</a>
+                            </div>
+                        </div>
+                        <div class="card alur-program" style="width: 18rem;">
+                            <img src="img/portfolio/portfolio-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="bold">Belajar Dasar Javascript</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <button class="btn btn-primary">add</button>
+                            </div>
+                        </div>
+                        <div class="card alur-program" style="width: 18rem;">
+                            <img src="img/portfolio/portfolio-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="bold">Belajar Dasar Javascript</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <button class="btn btn-primary">add</button>
+                            </div>
+                        </div>
+                        <div class="card alur-program" style="width: 18rem;">
+                            <img src="img/portfolio/portfolio-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="bold">Belajar Dasar Javascript</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <button class="btn btn-primary">add</button>
+                            </div>
+                        </div>
+                        <div class="card alur-program" style="width: 18rem;">
+                            <img src="img/portfolio/portfolio-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="bold">Belajar Dasar Javascript</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <button class="btn btn-primary">add</button>
+                            </div>
+                        </div>
+                        <div class="card alur-program" style="width: 18rem;">
+                            <img src="img/portfolio/portfolio-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="bold">Belajar Dasar Javascript</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <button class="btn btn-primary">add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End Portfolio Details Section -->
+
         <section id="aktivitas-belajar">
             <div class="container">
                 <div class="section-title" data-aos="fade-up">
                     <h2>Aktivitas Belajar</h2>
                 </div>
                 <input type="text" id="cari-kelas" class="cari-kelas" placeholder="Cari kelasmu">
-                <ul class="list-group">
+                <ul class="list-group" id="belajar">
                     <li class="list-group-item">
-                      Belajar Dasar Pemrograman Web
-                      <a href="#" class="lanjut-belajar d-flex justify-content-end">
-                        <span class="badge bg-primary text-decoration-none">Lanjut Belajar</span>
-                      </a>
+                        Belajar Dasar Pemrograman Web
+                        <!-- <a href="#" class="lanjut-belajar d-flex justify-content-end">
+                            <span class="badge bg-primary text-decoration-none">Lanjut Belajar</span>
+                        </a> -->
                     </li>
-                    
-                  </ul>
+
+                </ul>
             </div>
         </section>
     </main>
@@ -177,14 +222,21 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="script.js"></script>
-
     <script>
-        let nama = localStorage.getItem('nama');
+        const listBelajar = document.querySelector("#btn-add");
+        const tulisList = document.querySelector("#namaKelas");
+        const belajar = document.querySelector("#belajar");
+        listBelajar.addEventListener('click', createList);
+        function createList(e) {
+            e.preventDefault();
 
-        document.getElementById('nama').innerHTML = nama;
+            const li = document.createElement("li");
+            li.className = "list-group-item"
+            li.appendChild(document.createTextNode(tulisList.value));
 
+            belajar.appendChild(li);
+        }
     </script>
-
     <!-- <script>
     function Redirect() {
       window.location = login.html

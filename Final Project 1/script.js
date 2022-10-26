@@ -2,8 +2,8 @@ function Redirect() {
   window.location = "courses.html";
 }
 
-let nama = localStorage.getItem('name');
-document.getElementById('name').innerHTML = nama;
+let nama = localStorage.getItem('nama');
+document.getElementById('nama').innerHTML = nama;
 
 const myModal = document.getElementById('myModal')
 const myInput = document.getElementById('myInput')
