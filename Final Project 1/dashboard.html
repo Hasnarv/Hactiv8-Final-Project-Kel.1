@@ -29,7 +29,6 @@
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="dashboard.css">
 
     <!--Favicons -->
@@ -78,52 +77,6 @@
                         <h2 data-aos="fade-up" data-aos-delay="400">Semoga aktivitas belajarmu bersama GROW tetap
                             menyenangkan</h2>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-price" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
-                            Price List
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Price List</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <table class="table table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th>Program</th>
-                                                    <th>Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Mobile Programing</td>
-                                                    <td>Rpxx.xxx.xxx</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Web Programing</td>
-                                                    <td>Rpxx.xxx.xxx</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>IT Support</td>
-                                                    <td>Rpxx.xxx.xxx</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-price" id="btn-price" onclick="Redirect()"
-                                            data-bs-dismiss="modal">More</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
                         <img src="img/hero-img.jpg" class="img-fluid animated" alt="">
@@ -132,87 +85,34 @@
             </div>
         </section><!-- End Hero -->
 
-        <!-- ======= Portfolio Details Section ======= -->
-        <section id="portfolio-details" class="portfolio-details">
-            <div class="container">
-
-                <div class="row">
-                    <h3 class="bold text-center mb-4">Journey Map Study For Frond-End Developer</h3>
-                    <div class="alur row">
-                        <div class="card alur-program" style="width: 18rem;">
-                            <img src="img/portfolio/portfolio-1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="bold" id="namaKelas">Belajar Dasar Javascript</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" >add</a>
-                            </div>
-                        </div>
-                        <div class="card alur-program" style="width: 18rem;">
-                            <img src="img/portfolio/portfolio-1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="bold">Belajar Dasar Javascript</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <button class="btn btn-primary">add</button>
-                            </div>
-                        </div>
-                        <div class="card alur-program" style="width: 18rem;">
-                            <img src="img/portfolio/portfolio-1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="bold">Belajar Dasar Javascript</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <button class="btn btn-primary">add</button>
-                            </div>
-                        </div>
-                        <div class="card alur-program" style="width: 18rem;">
-                            <img src="img/portfolio/portfolio-1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="bold">Belajar Dasar Javascript</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <button class="btn btn-primary">add</button>
-                            </div>
-                        </div>
-                        <div class="card alur-program" style="width: 18rem;">
-                            <img src="img/portfolio/portfolio-1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="bold">Belajar Dasar Javascript</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <button class="btn btn-primary">add</button>
-                            </div>
-                        </div>
-                        <div class="card alur-program" style="width: 18rem;">
-                            <img src="img/portfolio/portfolio-1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="bold">Belajar Dasar Javascript</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <button class="btn btn-primary">add</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section><!-- End Portfolio Details Section -->
-
         <section id="aktivitas-belajar">
             <div class="container">
                 <div class="section-title" data-aos="fade-up">
                     <h2>Aktivitas Belajar</h2>
                 </div>
-                <input type="text" id="cari-kelas" class="cari-kelas" placeholder="Cari kelasmu">
                 <ul class="list-group" id="belajar">
-                    <li class="list-group-item">
-                        Belajar Dasar Pemrograman Web
-                        <!-- <a href="#" class="lanjut-belajar d-flex justify-content-end">
-                            <span class="badge bg-primary text-decoration-none">Lanjut Belajar</span>
-                        </a> -->
+                    <li class="list-group-item mt-2">
+                        <p class="mt-2">Belajar Dasar Pemrograman Web</p>
+                        <a href="#" class="lanjut-belajar d-flex justify-content-end">
+                            <button class="btn bg-primary text-decoration-none ">Lanjut Belajar</button>
+                        </a>
                     </li>
-
+                </ul>
+                <ul class="list-group" id="belajar">
+                    <li class="list-group-item mt-2">
+                        <p class="mt-2">Belajar Dasar Pemrograman Web</p>
+                        <a href="#" class="lanjut-belajar d-flex justify-content-end">
+                            <button class="btn bg-primary text-decoration-none ">Lanjut Belajar</button>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list-group" id="belajar">
+                    <li class="list-group-item mt-2">
+                        <p class="mt-2">Belajar Dasar Pemrograman Web</p>
+                        <a href="#" class="lanjut-belajar d-flex justify-content-end">
+                            <button class="btn bg-primary text-decoration-none ">Lanjut Belajar</button>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>
