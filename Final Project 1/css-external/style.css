@@ -497,6 +497,10 @@ body {
   padding-top: 40px;
 }
 
+.blog-detail p {
+  text-align: justify;
+}
+
 .alur{
   margin: 0px 100px;
 }
