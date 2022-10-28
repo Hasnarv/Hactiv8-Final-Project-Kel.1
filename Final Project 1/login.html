@@ -103,8 +103,8 @@
       for (let i = 0; i < data_user.length; i++) {
         if (data_user[i].username === username && data_user[i].password === password) {
           status = true;
+          
           // simpan ke localStorage
-          // localStorage.setItem('nama_key', 'nilai');
           localStorage.setItem('nim', data_user[i].nim);
           localStorage.setItem('nama', data_user[i].nama);
           localStorage.setItem('jurusan', data_user[i].jurusan);
@@ -138,9 +138,6 @@
         window.location = 'http://127.0.0.1:5500/Hactiv8-Final-Project-Kel.1/Final%20Project%201/dashboard.html';
       }, 3000);
     }
-
-        // displayResult(status);
-        // setTimeout(displayResult, 1000);
 
   </script>
 
