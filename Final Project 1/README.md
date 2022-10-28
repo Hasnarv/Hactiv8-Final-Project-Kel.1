@@ -1,6 +1,7 @@
 # Final Project 1
 **Website : GROW** <br>
-**Kelas : INPG-KS06** <hr>
+**Kelas : INPG-KS06** <br>
+**Kelompok 1** <hr>
 Team Produksi :
 * INPG-KS06-013 Amellia Veronica Agustin
 * INPG-KS06-006 Hasna Rizki Violina
