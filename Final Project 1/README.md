@@ -10,18 +10,24 @@ GROW merupakan website yang menyediakan pembelajaran online khususnya dalam bida
 ### B. Fitur
 1.	Course
     Berisi alur belajar beruka kelas-kelas tentang program yang diinginkan  
-    ![course2](https://user-images.githubusercontent.com/72425456/198607302-06177325-2dea-4d74-9482-39d9f1aeda18.jpg) <br><br>
-    ![course](https://user-images.githubusercontent.com/72425456/198607317-d3113029-e4f2-4967-885e-1608714bddc6.jpg) <br>
+    ![course2](https://user-images.githubusercontent.com/72425456/198607302-06177325-2dea-4d74-9482-39d9f1aeda18.jpg)
+    <br><br>
+    ![course](https://user-images.githubusercontent.com/72425456/198607317-d3113029-e4f2-4967-885e-1608714bddc6.jpg)
+    <br>
 <br>
 2.	Portofolio
     Berisi hasil karya dari alumni GROW
-    ![porto1](https://user-images.githubusercontent.com/72425456/198607274-185e5e70-cc1f-408b-b830-cac3b03aa246.jpg) <br><br>
-    ![porto2](https://user-images.githubusercontent.com/72425456/198607368-2230b711-1edc-46bd-b9e9-b21c385fcf5c.jpg) <br>
+    ![porto1](https://user-images.githubusercontent.com/72425456/198607274-185e5e70-cc1f-408b-b830-cac3b03aa246.jpg)
+    <br><br>
+    ![porto2](https://user-images.githubusercontent.com/72425456/198607368-2230b711-1edc-46bd-b9e9-b21c385fcf5c.jpg)
+    <br>
 <br>
 3.	Blog
     Berisi artikel-artikel seputar teknologi
-    ![blog1](https://user-images.githubusercontent.com/72425456/198607354-c53e3f35-d2bd-4be8-94a7-7c515681b085.jpg) <br><br>
-    ![blog2](https://user-images.githubusercontent.com/72425456/198607337-a6671b4b-c7d5-4f30-b577-f52ef525a4e6.jpg) <br>
+    ![blog1](https://user-images.githubusercontent.com/72425456/198607354-c53e3f35-d2bd-4be8-94a7-7c515681b085.jpg)
+    <br><br>
+    ![blog2](https://user-images.githubusercontent.com/72425456/198607337-a6671b4b-c7d5-4f30-b577-f52ef525a4e6.jpg)
+    <br>
 
 ### C. Akses Login
 * username: rizki
