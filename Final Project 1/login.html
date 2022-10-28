@@ -1,152 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Login</title>
-</head>
-<body>
-    <section class="h-100 gradient-form">
-        <div class="container py-5 h-100">
-          <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-xl-10">
-              <div class="card rounded-3 text-black">
-                <div class="row g-0">
-                  <div class="col-lg-6">
-                    <div class="card-body p-md-5 mx-md-4">
-      
-                      <div class="text-center">
-                        <h1 class="title mt-1 mb-5 pb-1 bold">GROW</h1>
-                      </div>
-      
-                      <form>
-                        <p>Please login to your account</p>
-      
-                        <div class="form-outline mb-4">
-                          <label for="username">Username: </label>
-                          <input type="text" name="username" id="username" /> <br/>                
-                        </div>
-      
-                        <div class="form-outline mb-4">
-                          <label for="password">Password: </label>
-                          <input type="password" name="password" id="password" /> <br/><br/>                
-                        </div>
-      
-                        <div class="text-center pt-1 mb-5 pb-1">
-                          <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit" id="btn-login">Login</button>
-                        </div>
 
-                        <div id="result"></div>
-      
-                      </form>
-      
-                    </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css-external/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Login</title>
+</head>
+
+<body>
+  <section class="h-100 gradient-form">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-xl-10">
+          <div class="card rounded-3 text-black">
+            <div class="row g-0">
+              <div class="col-lg-6">
+                <div class="card-body p-md-5 mx-md-4">
+
+                  <div class="text-center">
+                    <h1 class="title mt-1 mb-5 pb-1 bold">GROW</h1>
                   </div>
-                  <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
-                    <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                      <h4 class="mb-4">Upgrade your coding skill with GROW</h4>
-                      <p class="small mb-0">Let's learn programming with GROW, we have reliable instructors from the best colleges like Hardvard, Stanford, and many more world's leading universities. Gain the essential coding skills needed for frontend and/or backend web development, mobile developers, iOS, Android, and more.</p>
+
+                  <form>
+                    <p>Please login to your account</p>
+
+                    <div class="form-outline mb-4">
+                      <label for="username">Username: </label>
+                      <input type="text" name="username" id="username" /> <br />
                     </div>
-                  </div>
+
+                    <div class="form-outline mb-4">
+                      <label for="password">Password: </label>
+                      <input type="password" name="password" id="password" /> <br /><br />
+                    </div>
+
+                    <div class="text-center pt-1 mb-5 pb-1">
+                      <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit"
+                        id="btn-login">Login</button>
+                    </div>
+
+                    <div id="result"></div>
+
+                  </form>
+
+                </div>
+              </div>
+              <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                  <h4 class="mb-4">Upgrade your coding skill with GROW</h4>
+                  <p class="small mb-0">Let's learn programming with GROW, we have reliable instructors from the best
+                    colleges like Hardvard, Stanford, and many more world's leading universities. Gain the essential
+                    coding skills needed for frontend and/or backend web development, mobile developers, iOS, Android,
+                    and more.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <script>
-        let btnLogin = document.getElementById('btn-login');
+  <script>
+    let btnLogin = document.getElementById('btn-login');
 
-        let data_user = [
-            {
-                username: 'rizki',
-                password: '12345',
-                nim: '99382',
-                nama: 'Rizki Cahyana',
-                jurusan: 'Pendidikan Ilmu Komputer'
-            },
-            {
-                username: 'indra',
-                password: '12345',
-                nim: '99382',
-                nama: 'Indra Rohman',
-                jurusan: 'Teknik Industri'
-            },
-            {
-                username: 'rahmat',
-                password: '12345',
-                nim: '99382',
-                nama: 'Rahmat Affandi',
-                jurusan: 'Elektronika Instrumentasi'
-            }
-        ];
+    let data_user = [
+      {
+        username: 'rizki',
+        password: '12345',
+        nim: '99382',
+        nama: 'Rizki Cahyana',
+        jurusan: 'Pendidikan Ilmu Komputer'
+      },
+      {
+        username: 'indra',
+        password: '12345',
+        nim: '99382',
+        nama: 'Indra Rohman',
+        jurusan: 'Teknik Industri'
+      },
+      {
+        username: 'rahmat',
+        password: '12345',
+        nim: '99382',
+        nama: 'Rahmat Affandi',
+        jurusan: 'Elektronika Instrumentasi'
+      }
+    ];
 
-        console.log(data_user);
+    console.log(data_user);
 
-        btnLogin.addEventListener('click', function(e){
-            e.preventDefault();
-            
-            let username = document.getElementById('username').value;
-            let password = document.getElementById('password').value;
-            let status = false;
+    btnLogin.addEventListener('click', function (e) {
+      e.preventDefault();
 
-            for(let i = 0; i < data_user.length; i++){
-                if(data_user[i].username === username && data_user[i].password === password){
-                    status = true;
-                    // simpan ke localStorage
-                    // localStorage.setItem('nama_key', 'nilai');
-                    localStorage.setItem('nim', data_user[i].nim);
-                    localStorage.setItem('nama', data_user[i].nama);
-                    localStorage.setItem('jurusan', data_user[i].jurusan);
+      let username = document.getElementById('username').value;
+      let password = document.getElementById('password').value;
+      let status = false;
 
-                    // simpan ke cookies
-                    document.cookie = 'a=abc';
-                    document.cookie = 'nim='+data_user[i].nim;
-                    document.cookie = 'nama='+data_user[i].nama;
-                    document.cookie = 'jurusan='+data_user[i].jurusan;
+      for (let i = 0; i < data_user.length; i++) {
+        if (data_user[i].username === username && data_user[i].password === password) {
+          status = true;
+          // simpan ke localStorage
+          // localStorage.setItem('nama_key', 'nilai');
+          localStorage.setItem('nim', data_user[i].nim);
+          localStorage.setItem('nama', data_user[i].nama);
+          localStorage.setItem('jurusan', data_user[i].jurusan);
 
-                    break;
-                }
-            }
+          // simpan ke cookies
+          document.cookie = 'a=abc';
+          document.cookie = 'nim=' + data_user[i].nim;
+          document.cookie = 'nama=' + data_user[i].nama;
+          document.cookie = 'jurusan=' + data_user[i].jurusan;
 
-            if(status){ // status == true
-                // get data dari localStorage
-                // localStorage.getItem('nama_key');
-                console.log('nim: ' + localStorage.getItem('nim'));
-                console.log('nama: ' + localStorage.getItem('nama'));
-                console.log('jurusan: ' + localStorage.getItem('jurusan'));
-
-                displayResult(status);
-
-            }
-
-            /*
-                extras:
-                hapus data di localStorage
-                localStorage.removeItem('nama_key');
-            */
-
-        });
-
-        function displayResult(status){
-            document.getElementById('result').innerText = status;
-            setTimeout(() => {
-                alert('Anda akan dialihkan ke Dashboard..');
-                
-                window.location = 'http://127.0.0.1:5500/Hactiv8-Final-Project-Kel.1/Final%20Project%201/dashboard.html';
-            }, 3000);
+          break;
         }
+      }
+
+      const result = (status == true) ? resultStatus() : alert("Username atau Password yang anda masukkan salah. Silahkan Coba lagi !");
+
+      function resultStatus() {
+        console.log('nim: ' + localStorage.getItem('nim'));
+        console.log('nama: ' + localStorage.getItem('nama'));
+        console.log('jurusan: ' + localStorage.getItem('jurusan'));
+
+        displayResult(status);
+      }
+
+      // if(status){ // status == true
+      //     // get data dari localStorage
+      //     // localStorage.getItem('nama_key');
+      //     console.log('nim: ' + localStorage.getItem('nim'));
+      //     console.log('nama: ' + localStorage.getItem('nama'));
+      //     console.log('jurusan: ' + localStorage.getItem('jurusan'));
+
+      //     displayResult(status);
+
+      // }
+
+      // /*
+      //     extras:
+      //     hapus data di localStorage
+      //     localStorage.removeItem('nama_key');
+      // */
+
+    });
+
+    function displayResult(status) {
+      document.getElementById('result').innerText = status;
+      setTimeout(() => {
+        alert('Anda akan dialihkan ke Dashboard..');
+
+        window.location = 'http://127.0.0.1:5500/Hactiv8-Final-Project-Kel.1/Final%20Project%201/dashboard.html';
+      }, 3000);
+    }
 
         // displayResult(status);
         // setTimeout(displayResult, 1000);
 
-    </script>
+  </script>
 
 </body>
+
 </html>
-
-

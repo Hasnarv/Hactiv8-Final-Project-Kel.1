@@ -374,9 +374,9 @@ body {
   }
 
 /*--------------------------------------------------------------
-# Blog Details
+# Portfolio Details
 --------------------------------------------------------------*/
-.blog-detail {
+.portfolio-details {
     padding-top: 40px;
   }
   
@@ -384,17 +384,17 @@ body {
     margin: 0px 100px;
   }
 
-  .blog-detail .alur-program {
+  .portfolio-details .alur-program {
     margin: 10px;
   }
   
   
-  .blog-detail .blog-info {
+  .portfolio-details .portfolio-info {
     padding: 30px;
-    box-shadow: 0px 0 30px rgba(138, 60, 190, 0.08);
+    box-shadow: 0px 0 30px rgba(34, 34, 34, 0.08);
   }
   
-  .blog-detail .blog-info h3 {
+  .portfolio-details .portfolio-info h3 {
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -402,13 +402,13 @@ body {
     border-bottom: 1px solid #eee;
   }
   
-  .blog-detail .blog-info ul {
+  .portfolio-details .portfolio-info ul {
     list-style: none;
     padding: 0;
     font-size: 15px;
   }
   
-  .blog-detail .blog-info ul li+li {
+  .portfolio-details .portfolio-info ul li+li {
     margin-top: 10px;
   }
   
@@ -427,25 +427,21 @@ body {
     #ae57d9;
   }
 
-  .blog-detail .portfolio-description {
+  .portfolio-details .portfolio-description {
     padding-top: 30px;
   }
   
-  .blog-detail .portfolio-description h2 {
+  .portfolio-details .portfolio-description h2 {
     font-size: 26px;
     font-weight: 700;
     margin-bottom: 20px;
   }
   
-  .blog-detail .portfolio-description p {
+  .portfolio-details .portfolio-description p {
     padding: 0;
   }
 
-  
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-
-.img-blog {
-  width: 70%;
-}
+  .img-porto{
+    width: 100%;
+    border-radius: 20px;
+  }

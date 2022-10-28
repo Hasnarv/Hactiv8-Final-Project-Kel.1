@@ -376,25 +376,21 @@ body {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.portfolio-details {
+  .course-details {
     padding-top: 40px;
   }
-  
-  .alur{
-    margin: 0px 100px;
-  }
 
-  .portfolio-details .alur-program {
+  .course-details .alur-program {
     margin: 10px;
   }
   
   
-  .portfolio-details .portfolio-info {
+  .course-details .course-info {
     padding: 30px;
     box-shadow: 0px 0 30px rgba(34, 34, 34, 0.08);
   }
   
-  .portfolio-details .portfolio-info h3 {
+  .course-details .course-info h3 {
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -402,13 +398,13 @@ body {
     border-bottom: 1px solid #eee;
   }
   
-  .portfolio-details .portfolio-info ul {
+  .course-details .course-info ul {
     list-style: none;
     padding: 0;
     font-size: 15px;
   }
   
-  .portfolio-details .portfolio-info ul li+li {
+  .course-details .course-info ul li+li {
     margin-top: 10px;
   }
   
@@ -427,16 +423,23 @@ body {
     #ae57d9;
   }
 
-  .portfolio-details .portfolio-description {
+  .course-details .course-description {
     padding-top: 30px;
   }
   
-  .portfolio-details .portfolio-description h2 {
+  .course-details .course-description h2 {
     font-size: 26px;
     font-weight: 700;
     margin-bottom: 20px;
   }
   
-  .portfolio-details .portfolio-description p {
+  .course-details .course-description p {
     padding: 0;
+  }
+
+  .card{
+    padding-top: 10px;
+  }
+  .card img{
+    border-radius: 10px;
   }
