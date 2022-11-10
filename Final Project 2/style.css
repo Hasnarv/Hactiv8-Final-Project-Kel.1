@@ -222,3 +222,150 @@ body {
 .extra-info .ket-card p {
     font-size: 18px;
 }
+
+/* About */
+
+.about {
+    background-color: white;
+}
+
+.left-section, .right-section {
+    padding: 60px;
+}
+
+.left-section h1, .left-section p {
+    color: #234CAD;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.left-section button {
+    background-color: transparent;
+    color: #234CAD;
+    font-weight: 700;
+    border: 2px solid #234CAD;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 30px;
+}
+
+.right-section {
+   background-color: #F2F6FF; 
+   border-radius: 60px;
+   height: 500px;
+   width: 500px;
+   margin-left: 0px;
+}
+
+.detail-card {
+    color: #234CAD;
+}
+
+.detail-card p {
+    font-size: 12px;
+}
+
+.card-utama {
+    background-color: white;
+    border-radius: 25px;
+    width: 240px;
+    padding: 15px 0 0 10px;
+}
+
+.card-utama .kartu-icon {
+    border: 2px solid #234CAD;
+    border-radius: 35px;
+    color: #234CAD;
+    padding: 15px;
+}
+
+.item-day{
+    background-color: #F2F6FF;
+    border: 3px solid white;
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: -12px;
+    color: #234CAD;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+/* End About */
+
+/* Pricing */
+
+.title-pricing {
+    color: #234CAD;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.title-pricing p {
+    width: 30%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.content-pricing .item-card {
+    margin-top: 75px;
+    background-color:#F2F6FF;
+    border: none;
+    border-radius: 40px;
+    width: 250px;
+    height: 280px;
+}
+
+.content-pricing .item-card-2 {
+    margin-top: 75px;
+    border: 3px solid #234CAD;
+    border-radius: 40px;
+    width: 250px;
+    height: 280px;
+}
+
+.content-pricing .card-title {
+    color: #234CAD;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.content-pricing .card-text {
+    color: #234CAD;
+    font-size: 35px;
+    margin-bottom: -5px;
+}
+
+.content-pricing .item-card .card-text2 {
+    color: #234CAD;
+    font-size: 15px;
+}
+
+.content-pricing .item-card-2 .card-text2 {
+    color: #234CAD;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+.card-body .btn-LearnMore {
+    background-color: white;
+    color: #234CAD;
+    font-weight: 700;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 30px;
+}
+
+.card-body .btn-GetStarted {
+    text-decoration: none;
+    color: #234CAD;
+    font-weight: 700;
+    border: 3px solid #234CAD;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 0px;
+}
+
+/* End Pricing */
