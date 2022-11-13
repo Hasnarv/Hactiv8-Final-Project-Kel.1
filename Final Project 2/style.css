@@ -377,3 +377,49 @@ body {
 }
 
 /* End Pricing */
+
+/* FOOTER */
+footer {
+    margin-top: 80px;
+    height: 650px;
+}
+
+.footer-email {
+    margin-top: 50px;
+    border-radius: 50px;
+    height: 365px;
+    padding: 80px;
+    background-color: #F2F6FF;
+    text-align: center;
+    position: relative;
+    color: #234CAD;
+}
+
+.footer-email h1 {
+    font-weight: 700;
+    margin-bottom: -5px;
+}
+
+.footer-email p {
+   margin: 25px auto;
+   width: 30%;
+}
+.footer-email input {
+    width: 38%;
+    height: 47px;
+    border: 1px;
+    border-radius: 12px;
+    padding-left: 15px ;
+}
+
+.footer-email button {
+    position: absolute;
+    border-radius: 10px;
+    background-color: #234CAD;
+    padding: 9px 10px 4px 10px;
+    bottom: 102px;
+    right: 440px;
+    color: white;
+    border: none;
+}
+/* END FOOTER */
