@@ -255,6 +255,14 @@ body {
    height: 500px;
    width: 500px;
    margin-left: 0px;
+   overflow: hidden;
+}
+
+.item-right-section {
+    margin-top: 50px;
+    margin-right: -150px;
+    margin-left: 15px;
+    
 }
 
 .detail-card {
