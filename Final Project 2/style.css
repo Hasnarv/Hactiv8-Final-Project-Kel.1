@@ -183,11 +183,11 @@ body {
 }
 .card-main.ab .notif{
     top: 340px;
-    right: 405px;
+    right: 390px;
 }
 .card-main.js .notif{
     top: 505px;
-    right: 715px;
+    right: 700px;
 }
 .card-main.ms {
     margin-top: -50px;
