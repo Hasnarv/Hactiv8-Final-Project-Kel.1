@@ -604,11 +604,16 @@ body {
     margin-top: 50px;
     margin-right: -150px;
     margin-left: 15px;
-    
+   
+}
+
+.style-opacity {
+ opacity: .7;
 }
 
 .detail-card {
     color: #234CAD;
+
 }
 
 .detail-card p {
