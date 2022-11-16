@@ -1,5 +1,6 @@
 body {
     font-family: nunito;
+    width: 100%;
 }
 
 /* ========== Navbar ========== */
@@ -38,17 +39,17 @@ body {
 
 /* ========== BANNER ============= */
 .banner {
-    margin-top: 50px;
+    margin-top: 4em;
     border-radius: 50px;
-    height: 500px;
+    height: 61vh;
     background-color: #F2F6FF;
 }
 .left-side, .right-side {
-    padding: 60px;
+    padding: 4em;
 }
 .left-side h1, .left-side p {
     color: #234CAD;
-    margin-bottom: 30px;
+    margin-bottom: 0.5em;
 }
 .left-side button {
     background-color: transparent;
@@ -56,36 +57,40 @@ body {
     font-weight: 700;
     border: 2px solid #234CAD;
     border-radius: 30px;
-    padding: 10px 20px;
+    margin-top: 1em;
+    padding: 0.5em 1em;
 }
 .right-side {
-    height: 500px;
-    padding-left: 200px;
-    margin-top: -70px;
+    height: 64vh;
+    padding-left: 13.5em;
+    margin-top: -5em;
 }
 .col-12, .col-6 {
-    margin-bottom: 15px;
+    margin-bottom: 0.9em;
 }
 .card {
     border: none;
 }
 .card-small {
-    height: 70px;
-    width: 70px;
+    height: 4.6em;
+    width: 4.5em;
     border-radius: 20px;
-    margin-left: -10px;
+    margin-left: -0.5em;
 }
 .icon-kecil {
     margin: auto;
-    font-size: 35px;
-    padding: 10px;
+    font-size: 2em;
+    padding: 0.5em;
     color: #234CAD;
 }
 .icon-card{
     border-radius: 35px;
-    font-size: 20px;
-    padding: 15px;
+    font-size: 1.13em;
+    padding: 14px;
     background-color: #F2F6FF;
+}
+.uploading .icon-card{
+    font-size: 1.5em;
 }
 .card-main {
     background-color: white;
@@ -94,7 +99,7 @@ body {
     border-radius: 20px;
 }
 .ket-card {
-    padding: 20px 0 5px 20px;
+    padding: 1.2em 0 0.5em 0.5em;
 }
 .team-meeting{
     background-color: white;
@@ -141,9 +146,11 @@ body {
     height: 160px;
     padding: 30px 0;
     border-radius: 20px;
-    position: absolute;
-    top: 155px;
-    right: 260px;
+    margin-top: -4.6em;
+    margin-left: 5em;
+    /* position: absolute; */
+    /* top: 155px;
+    right: 260px; */
 }
 .card-main.ab {
     margin-left: -20px;
@@ -153,25 +160,33 @@ body {
     font-size: 12px;
 }
 .ket-card .time {
-    position: absolute;
+    /* position: absolute; */
     font-size: 10px;
 }
-.ab .ket-card .time {
-    top: 350px;
-    right: 150px;
+.ab.card-main .time {
+    width: 20%;
+    font-size: 0.7em;
+    margin-top: -6em;
+    margin-left: 24em;
 }
-.js .ket-card .time {
-    top: 510px;
-    right: 465px;
+.js.card-main .time {
+    width: 21%;
+    font-size: 0.65em;
+    margin-top: -6.5em;
+    margin-left: 25em;
 }
 .ab .icon-card, .js .icon-card{
     width: 90%;
     text-align: center;
-    margin-left: 10px;
+    margin-left: 0.6em;
+    margin-bottom: -3em;
+}
+.card-main .icon {
+    margin-bottom: 2.3em;
 }
 .card-main .notif{
     font-size: 8px;
-    position: absolute;
+    /* position: absolute; */
     width: 20px;
     height: 20px;
     border-radius: 25px;
@@ -180,29 +195,30 @@ body {
     padding-top: 2px;
     background-color: #234CAD;
     color: white;
+    z-index: 1;
 }
 .card-main.ab .notif{
-    top: 340px;
-    right: 390px;
+    margin-top: -5em;
+    margin-left: 6.5em;
 }
 .card-main.js .notif{
-    top: 505px;
-    right: 700px;
+    margin-top: -2.5em;
+    margin-left: 6.2em;
 }
 .card-main.ms {
     margin-top: -50px;
     margin-left: 90px;
 }
 .ms .icon-card {
-    font-size: 28px;
+    font-size: 1.6em;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 8px;
+    padding-top: 0.5em;
+    padding-bottom: 0.2em;
     margin: 0 -10px 0 10px;
 }
 .card-small.chat {
-    margin-left: 370px;
-    margin-top: -35px;
+    margin-left: 23em;
+    margin-top: -2.5em;
 }
 
 /* EXTRA INFO */
@@ -573,6 +589,7 @@ body {
 
 .left-section, .right-section {
     padding: 60px;
+    margin: 0 110px;
 }
 
 .left-section h1, .left-section p {
@@ -765,8 +782,8 @@ footer {
     border-radius: 10px;
     background-color: #234CAD;
     padding: 9px 10px 4px 10px;
-    bottom: 78px;
-    right: 363px;
+    bottom: 102px;
+    right: 440px;
     color: white;
     border: none;
 }
@@ -797,3 +814,39 @@ footer {
 }
 
 /* END FOOTER */
+
+@media (max-width: 1440px) {
+    .right-side {
+        height: 64vh;
+        padding-left: 5em;
+        margin-top: -7.5em;
+    }
+    .container {
+        width: 89%;
+    }
+    .banner{
+        height: 68vh;
+    }
+    .card-small.chat {
+        margin-left: 24.5em;
+    }
+    .card-main {
+        width: 110%;
+    }
+    .icon-card{
+        font-size: 1.6em;
+    }
+    .ab.card-main .time {
+        margin-left: 26em;
+    }
+    .js.card-main .time {
+        margin-left: 27em;
+    }
+    .ab .icon-card, .js .icon-card{
+        width: 85%;
+        font-size: 1.2em;
+    }
+    .ms .icon-card {
+        width: 85%;
+    }
+}
