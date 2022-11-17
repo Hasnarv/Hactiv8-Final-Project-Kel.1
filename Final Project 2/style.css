@@ -86,6 +86,7 @@ body {
 .icon-card{
     border-radius: 35px;
     font-size: 1.13em;
+    font-weight: 700;
     padding: 14px;
     background-color: #F2F6FF;
 }
@@ -164,13 +165,13 @@ body {
     font-size: 10px;
 }
 .ab.card-main .time {
-    width: 20%;
+    width: 22%;
     font-size: 0.7em;
     margin-top: -6em;
     margin-left: 24em;
 }
 .js.card-main .time {
-    width: 21%;
+    width: 22%;
     font-size: 0.65em;
     margin-top: -6.5em;
     margin-left: 25em;
@@ -815,7 +816,7 @@ footer {
 
 /* END FOOTER */
 
-@media (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
     .right-side {
         height: 64vh;
         padding-left: 5em;
@@ -848,5 +849,144 @@ footer {
     }
     .ms .icon-card {
         width: 85%;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* NAVBAR */
+    .nav-item a {
+        font-size: 0.8em;
+    }
+    .btn {
+        font-size: 0.8em;
+    }
+    
+    /* BANNER */
+    .container {
+        width: 85%;
+    }
+    .banner {
+        height: 53vh;
+        margin-top: 2em;
+    }
+    .left-side h1 {
+        font-size: 1.9em;
+    }
+    .left-side p {
+        font-size: 0.8em;
+        width: 120%;
+    }
+    .left-side button {
+        font-size: 0.8em;
+    }
+    .right-side {
+        padding-left: 6.5em;
+        margin-top: -3.5em;
+    }
+    .col-12, .col-6 {
+        font-size: 0.7em;
+    }
+    .card-small {
+        border-radius: 15px;
+    }
+    .icon-card{
+        font-size: 1.2em;
+    }
+    .meeting .icon-card {
+        padding: 0.8em;
+    }
+    .card-main {
+        width: 130%;
+    }
+    .ket-card {
+        padding-left: 2em;
+    }
+    .ket-card h6{
+        font-size: 1em;
+    }
+    .ket-card p {
+        font-size: 0.8em;
+    }
+    .team-meeting{
+        width: 95%;
+    }
+    .item-person{
+        font-size: 0.8em;
+        width: 4em;
+        height: 4em;
+        padding: 1em;
+    }
+    .card-cloud .icon-cloud {
+        font-size: 2em;
+        padding: 0.7em;
+    }
+    .card-cloud p {
+        font-size: 0.9em;
+        margin-top: 1em;
+    }
+    .card-cloud {
+        background-color: white;
+        width: 9em;
+        height: 11em;
+        padding: 1.6em;
+        margin-left: 4em;
+    }
+    .card-main.ab {
+        margin-left: -2em;
+    
+    }
+    .ab.card-main .time {
+        width: 25%;
+        font-size: 0.7em;
+        margin-top: -7em;
+        margin-left: 24em;
+    }
+    .js.card-main .time {
+        width: 25%;
+        font-size: 0.65em;
+        margin-top: -7.5em;
+        margin-left: 25em;
+    }
+    .ab .icon-card, .js .icon-card{
+        width: 130%;
+        text-align: center;
+        margin-left: 0.6em;
+        margin-bottom: -3em;
+    }
+    .card-main.ab .notif{
+        margin-top: -6em;
+        margin-left: 5em;
+    }
+    .card-main.js .notif{
+        margin-top: -6em;
+        margin-left: 5em;
+    }
+    .card-main.ms {
+        width: 135%;
+        margin-top: -4em;
+        margin-left: 4em;
+    }
+    .ms .icon-card {
+        padding-top: 0.7em;
+        padding-bottom: 0.3em;
+    }
+    .card-small.chat {
+        margin-left: 23em;
+        margin-top: -2.5em;
+    }
+
+    /* EXTRA INFO */
+    .extra-info .card-main {
+        width: 50%;
+    }
+    .extra-info .icon-card {
+        font-size: 1.8em;
+        margin-left: 0.5em;
+    }
+    .extra-info .ket-card h6 {
+        font-size: 1em;
+    }
+    .extra-info .ket-card p {
+        font-size: 0.8em;
     }
 }
