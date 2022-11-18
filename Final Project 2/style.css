@@ -170,9 +170,6 @@ input#username, input#password {
     border-radius: 20px;
     margin-top: -4.6em;
     margin-left: 5em;
-    /* position: absolute; */
-    /* top: 155px;
-    right: 260px; */
 }
 .card-main.ab {
     margin-left: -20px;
@@ -182,7 +179,6 @@ input#username, input#password {
     font-size: 12px;
 }
 .ket-card .time {
-    /* position: absolute; */
     font-size: 10px;
 }
 .ab.card-main .time {
@@ -208,7 +204,6 @@ input#username, input#password {
 }
 .card-main .notif{
     font-size: 8px;
-    /* position: absolute; */
     width: 20px;
     height: 20px;
     border-radius: 25px;
@@ -293,11 +288,7 @@ input#username, input#password {
 }
 
 .middle{
-    /* text-align: center; */
     align-items: center;
-    /* justify-content: center; */
-    /* vertical-align: middle; */
-    /* border: 1px solid red; */
 }
 
 .center-vertical{
@@ -731,7 +722,6 @@ input#username, input#password {
     align-items: center;
     justify-content: center;
     vertical-align: middle;
-    /* border: #234CAD 2px solid; */
     box-shadow: 2px 5px 15px #f3f2fe;
 }
 
@@ -744,7 +734,6 @@ input#username, input#password {
     color: #234CAD;
     border: 2px solid #234CAD;
     font-size: 20px;
-    /* margin: 30px 50px 20px 50px ; */
     margin: 25px auto;
 }
 
@@ -756,14 +745,11 @@ input#username, input#password {
     line-height: 13px;
     color: #234CAD;
     text-align: center;
-    /* margin-left: 47px; */
     margin: 2px auto;
 }
-
 /* End product features*/
 
 /* About */
-
 .about {
     margin-top: 130px;
     background-color: white;
@@ -846,11 +832,9 @@ input#username, input#password {
     font-weight: 700;
     font-size: 13px;
 }
-
 /* End About */
 
 /* Pricing */
-
 .title-pricing {
     color: #234CAD;
     margin-top: 120px;
@@ -922,14 +906,14 @@ input#username, input#password {
     padding: 10px 20px;
     margin-top: 0px;
 }
-
 /* End Pricing */
 
-/* FOOTER */
+/* FOOTER & Contact*/
 footer {
     height: 650px;
 }
 
+/* Contact */
 .footer-email {
     margin-top: 120px;
     border-radius: 50px;
@@ -969,6 +953,7 @@ footer {
     border: none;
 }
 
+/* Footer */
 .footer-info {
     margin-top: 120px;
     color: #234CAD;
@@ -993,7 +978,6 @@ footer {
 .footer-info .col-3 {
     padding-left: 90px;
 }
-
 /* END FOOTER */
 
 @media (max-width: 1400px) {
@@ -1087,7 +1071,7 @@ footer {
         font-size: 1em;
     }
     
-    /* FOOTER */
+    /* Contact (Footer Email = contact) */
     .footer-email button {
         right: 24em;
     }
@@ -1102,7 +1086,7 @@ footer {
         margin-left: 21em;
     }
 
-    /* FOOTER */
+    /* Contact (Footer Email = contact) */
     .footer-email p {
        width: 35%;
     }
@@ -1285,7 +1269,7 @@ footer {
         font-size: 0.8em;
     }
 
-    /* FOOTER */
+    /* Contact (Footer Email = contact)*/
     .footer-email {
         height: 50vh;
     }
