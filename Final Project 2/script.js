@@ -4,7 +4,6 @@ function login() {
     // mengambil nilai yang diinputkan user
     const uname = document.getElementById("username").value
     const pass = document.getElementById("password").value
-    const button = document.getElementById("signin")
 
     // menyimpan nilai ke local storage
     localStorage.setItem("username", uname)
