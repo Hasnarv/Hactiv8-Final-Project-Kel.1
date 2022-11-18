@@ -1,4 +1,4 @@
-# Final Project 1
+# Final Project 2
 **Website : GROW** <br>
 **Kelas : INPG-KS06** <br>
 **Kelompok 1** <hr>
@@ -17,13 +17,13 @@ Let us see what is there in the application:
 
 ### C. Penerapan JS
 1. Login
-Fitur ini menyimpan data username dan password ke local storage.
+<br>Fitur ini menyimpan data username dan password ke local storage.
 ![login1](https://user-images.githubusercontent.com/72425456/202673082-9f034b37-3c03-495c-91ef-c4afa1d07175.jpg)
 <br>Kemudian mengubah button Login & Sign Up menjadi sapaan user.
 ![login 2](https://user-images.githubusercontent.com/72425456/202673070-94d9e27f-ff66-4dc2-832f-57d41a1f4f8c.jpg)
 
 2. Contact
-Fitur ini menyimpan data email ke local storage.
+<br>Fitur ini menyimpan data email ke local storage.
 ![contact](https://user-images.githubusercontent.com/72425456/202673079-d8257111-a11b-4e50-b3c4-349e94a99679.jpg)
 
 ### Link Deployment
