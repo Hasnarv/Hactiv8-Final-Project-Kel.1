@@ -15,7 +15,8 @@ Let us see what is there in the application:
 3. Section C : About & Pricing by Amellia Veronica Agustin
 4. Section D : Contact & Footer by Hasna Rizki Violina & Amellia Veronica Agustin
 ### B. Penerapan HTML & CSS
-![htmljs](https://user-images.githubusercontent.com/72425456/202675044-c8550d57-d323-49db-8522-617cd0cccf73.jpg)
+![htmljs](https://user-images.githubusercontent.com/72425456/202676957-e1b3ca66-25b4-43bc-82ea-98dd0224fdf1.jpg)
+
 ### C. Penerapan JS
 1. Login
 <br>Fitur ini menyimpan data username dan password ke local storage.
