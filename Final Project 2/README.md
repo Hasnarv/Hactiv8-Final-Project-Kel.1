@@ -6,6 +6,9 @@ Team Produksi :
 * INPG-KS06-013 Amellia Veronica Agustin
 * INPG-KS06-006 Hasna Rizki Violina
 * INPG-KS06-024 Nadya Dinda Aulia
+
+### Link Deployment
+Link GROW [Klik Disini]()
 ### A. Landing Project Details
 Let us see what is there in the application:
 1. Section A : Header & Banner by Hasna Rizki Violina
@@ -26,5 +29,4 @@ Let us see what is there in the application:
 <br>Fitur ini menyimpan data email ke local storage.
 ![contact](https://user-images.githubusercontent.com/72425456/202673079-d8257111-a11b-4e50-b3c4-349e94a99679.jpg)
 
-### Link Deployment
-Link GROW [Klik Disini]()
+
