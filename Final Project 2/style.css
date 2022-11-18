@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
 body {
     font-family: nunito;
     width: 100%;
@@ -261,12 +263,8 @@ input#username, input#password {
 }
 
 /* Product features*/
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
-
-
 .section-2{
-    margin: 157px 213px 157px 213px;
+    margin: 100px 213px 100px 213px;
 }
 
 .box-2{
@@ -295,10 +293,11 @@ input#username, input#password {
 }
 
 .middle{
-    text-align: center;
+    /* text-align: center; */
     align-items: center;
-    justify-content: center;
-    vertical-align: middle;
+    /* justify-content: center; */
+    /* vertical-align: middle; */
+    /* border: 1px solid red; */
 }
 
 .center-vertical{
@@ -550,6 +549,7 @@ input#username, input#password {
     line-height: 56px;
     color: #234CAD;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .section-2-transform-sub{
@@ -560,6 +560,7 @@ input#username, input#password {
     line-height: 26px;
     color: #234CAD;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .features-2{
@@ -579,6 +580,7 @@ input#username, input#password {
     border-radius: 20px;
     background-color: white;
     margin: 25px;
+    text-align: center;
 }
 
 .features-2 .chat-1{
@@ -600,6 +602,7 @@ input#username, input#password {
     border-radius: 25px;
     background: #FFFFFF;
     margin: 25px;
+    box-shadow: 2px 8px 15px #e3ecff;
 }
 
 .sales-meeting.rounded-circle{
@@ -611,6 +614,8 @@ input#username, input#password {
     color: #234CAD;
     border: 2px solid #234CAD;
     font-size: 22px;
+    text-align: center;
+    box-shadow: none;
 }
 
 .sales-meeting h1{
@@ -620,6 +625,7 @@ input#username, input#password {
     font-family: 'Nunito';
     line-height: 21px;
     margin-bottom: -20px;
+    box-shadow: none;
 }
 
 .sales-meeting h2{
@@ -629,6 +635,7 @@ input#username, input#password {
     font-size: 12px;
     line-height: 21px;
     color: #234CAD;
+    box-shadow: none;
 }
 
 .sales-meeting .col.row.name{
@@ -646,6 +653,7 @@ input#username, input#password {
     border: 2px solid #ffffff;
     font-size: 16px;
     margin-top: -10px;
+    box-shadow: none;
 }
 
 .sales-meeting.rounded-circle2{
@@ -659,6 +667,7 @@ input#username, input#password {
     font-size: 16px;
     margin-top: -10px;
     margin-left: -30px;
+    box-shadow: none;
 }
 
 .sales-meeting.rounded-circle2left h2, .sales-meeting.rounded-circle2 h2{
@@ -689,7 +698,7 @@ input#username, input#password {
     border: 2px solid #234CAD;
     font-size: 20px;
     margin: 20px;
-
+    text-align: center;
 }
 
 .upload-doc h1{
@@ -699,6 +708,7 @@ input#username, input#password {
     font-family: 'Nunito';
     line-height: 21px;
     margin-top: 25px;
+    margin-left: -20px;
 }
 
 .upload-doc h2{
@@ -708,6 +718,7 @@ input#username, input#password {
     font-size: 12px;
     line-height: 21px;
     color: #234CAD;
+    margin-left: -20px;
 }
 
 .features-2 .cloud{
@@ -720,7 +731,8 @@ input#username, input#password {
     align-items: center;
     justify-content: center;
     vertical-align: middle;
-    border: #234CAD 2px solid;
+    /* border: #234CAD 2px solid; */
+    box-shadow: 2px 5px 15px #f3f2fe;
 }
 
 .cloud .rounded-circle{
@@ -732,18 +744,20 @@ input#username, input#password {
     color: #234CAD;
     border: 2px solid #234CAD;
     font-size: 20px;
-    margin: 30px 50px 20px 50px ;
+    /* margin: 30px 50px 20px 50px ; */
+    margin: 25px auto;
 }
 
 .cloud h2{
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 13px;
     color: #234CAD;
     text-align: center;
-    margin-left: 47px;
+    /* margin-left: 47px; */
+    margin: 2px auto;
 }
 
 /* End product features*/
@@ -1017,6 +1031,52 @@ footer {
         width: 100%;
     }
 
+    /* EXTRA INFO */
+    .extra-info .card-main {
+        margin-top: 3em;
+        width: 50%;
+    }
+    .extra-info .icon-card {
+        font-size: 2em;
+        margin-left: 1em;
+    }
+    .extra-info .ket-card h6 {
+        font-size: 1.5em;
+    }
+    .extra-info .ket-card p {
+        font-size: 1em;
+    }
+
+    /* ABOUT */
+    
+    .left-section, .right-section {
+        padding: 50px;
+        margin: 0 60px;
+    }
+
+    .left-section {
+        margin-left: -60px;
+    }
+
+    .right-section {
+        margin-right: -80px;
+    }
+    
+    .left-section h1, .left-section p {
+        width: 120%;
+        
+    }
+    .left-section h1{
+        font-size: 2.5em;
+    }
+    .left-section p{
+        font-size: 1em;
+    }
+    
+    .left-section button {
+        font-size: 1em;
+    }
+    
     /* FOOTER */
     .footer-email button {
         right: 24em;
@@ -1218,14 +1278,6 @@ footer {
     /* FOOTER */
     .footer-email {
         height: 50vh;
-        /* margin-top: 120px;
-        border-radius: 50px;
-        height: 365px;
-        padding: 80px;
-        background-color: #F2F6FF;
-        text-align: center;
-        position: relative;
-        color: #234CAD; */
     }
     
     .footer-email h1 {
