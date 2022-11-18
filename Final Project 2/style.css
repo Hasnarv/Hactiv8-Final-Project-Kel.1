@@ -23,18 +23,27 @@ body {
     color: #234CAD;
     font-weight: 400;
 }
-.btn {
+.btn-nav {
     border-radius: 30px;
     padding: 5px 20px;
     margin-left: 10px;
     color: #234CAD;
     font-weight: 700;
 }
-.btn.btn-signin {
+.btn-nav.btn-signin {
     border: 2px solid #234CAD;
+    background-color: transparent;
 }
-.btn.btn-signup {
+.btn-nav.btn-signup {
     background-color: #F2F6FF;
+    border: none;
+}
+
+input#username, input#password {
+    padding: 5px 50px 5px 15px;
+    margin: 10px;
+    border: 1px solid #c3c3c3;
+    border-radius: 10px;
 }
 
 /* ========== BANNER ============= */
@@ -90,8 +99,19 @@ body {
     padding: 14px;
     background-color: #F2F6FF;
 }
+.uploading .icon-border {
+    width: 2.2vw;
+    z-index: 1;
+    margin-left: 1.5em;
+    margin-top: -6em;
+}
 .uploading .icon-card{
+    margin-top: 1em;
+    margin-bottom: -0.5em;
     font-size: 1.5em;
+}
+.card-cloud .icon-border {
+    margin-top: -6.5em;
 }
 .card-main {
     background-color: white;
@@ -138,7 +158,6 @@ body {
 }
 .card-cloud p {
     font-size: 12px;
-    margin-top: 20px;
     color: #234CAD;
 }
 .card-cloud {
@@ -165,13 +184,13 @@ body {
     font-size: 10px;
 }
 .ab.card-main .time {
-    width: 22%;
+    width: 23%;
     font-size: 0.7em;
     margin-top: -6em;
     margin-left: 24em;
 }
 .js.card-main .time {
-    width: 22%;
+    width: 24%;
     font-size: 0.65em;
     margin-top: -6.5em;
     margin-left: 25em;
@@ -894,7 +913,6 @@ body {
 
 /* FOOTER */
 footer {
-    /* margin top tidak berfungsi di sini*/
     height: 650px;
 }
 
@@ -964,7 +982,7 @@ footer {
 
 /* END FOOTER */
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (max-width: 1400px) {
     .right-side {
         height: 64vh;
         padding-left: 5em;
@@ -977,7 +995,7 @@ footer {
         height: 68vh;
     }
     .card-small.chat {
-        margin-left: 24.5em;
+        margin-left: 22.5em;
     }
     .card-main {
         width: 110%;
@@ -986,21 +1004,50 @@ footer {
         font-size: 1.6em;
     }
     .ab.card-main .time {
-        margin-left: 26em;
+        margin-left: 23em;
     }
     .js.card-main .time {
-        margin-left: 27em;
+        margin-left: 24em;
     }
     .ab .icon-card, .js .icon-card{
-        width: 85%;
+        width: 100%;
         font-size: 1.2em;
     }
     .ms .icon-card {
-        width: 85%;
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .footer-email button {
+        right: 24em;
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1270px) {
+    /* BANNER */
+    .js.card-main .time {
+        margin-left: 22em;
+    }
+    .ab.card-main .time {
+        margin-left: 21em;
+    }
+
+    /* FOOTER */
+    .footer-email p {
+       width: 35%;
+    }
+    .footer-email input {
+        width: 45%;
+    }
+    
+    .footer-email button {
+        right: 21.7em;
+        bottom: 6.4em;
+    }
+    
+}
+
+@media (max-width: 1200px) {
     /* NAVBAR */
     .nav-item a {
         font-size: 0.8em;
@@ -1137,4 +1184,62 @@ footer {
     .extra-info .ket-card p {
         font-size: 0.8em;
     }
+
+    /* ABOUT */
+    
+    .left-section, .right-section {
+        padding: 50px;
+        margin: 0 60px;
+    }
+
+    .left-section {
+        margin-left: -60px;
+    }
+
+    .right-section {
+        margin-right: -80px;
+    }
+    
+    .left-section h1, .left-section p {
+        width: 150%;
+        
+    }
+    .left-section h1{
+        font-size: 1.5em;
+    }
+    .left-section p{
+        font-size: 1em;
+    }
+    
+    .left-section button {
+        font-size: 0.8em;
+    }
+
+    /* FOOTER */
+    .footer-email {
+        height: 50vh;
+        /* margin-top: 120px;
+        border-radius: 50px;
+        height: 365px;
+        padding: 80px;
+        background-color: #F2F6FF;
+        text-align: center;
+        position: relative;
+        color: #234CAD; */
+    }
+    
+    .footer-email h1 {
+        font-size: 2em;
+    }
+    
+    .footer-email p {
+       width: 50%;
+    }
+    
+    .footer-email button {
+        right: 18.7em;
+        bottom: 6.2em;
+    }
+    
+
 }

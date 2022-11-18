@@ -20,11 +20,55 @@
 <body>
     <div class="container">
         <!-- NAVBAR -->
+        <!-- <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav> -->
+
+
+
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid text-center">
                 <a class="navbar-brand" href="#">
                     <img src="img/icon-menu.png" alt="">
                 </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -40,133 +84,162 @@
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
-                </div>
-                <div class="button">
-                    <button class="btn btn-signin" type="submit">Login</button>
-                    <button class="btn btn-signup" type="submit">Sign Up</button>
-                </div>
-            </div>
-        </nav> <!-- END NAVBAR -->
+                    <div id="greet"></div>
+                    <div class="d-flex" role="login">
+                        <button class="btn-nav btn-signin" id="signin" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+                        <button class="btn-nav btn-signup" id="signup" type="submit">Sign Up</button>
 
-        <!-- BANNER -->
-        <div class="row banner align-items-center">
-            <div class="col-lg-4 order-2 order-lg-1 left-side">
-                <h1><b>Business Communications Reinvented</b></h1>
-                <p>Start communicating with your business team more efficiently with our app.</p>
-                <button class="btn-getTheApp">Get the app</button>
-            </div>
-            <div class="col-lg-8 order-1 order-lg-2 right-side">
-                <div class="row">
-                    <div class="col-12 style-opacity">
-                        <div class="card card-small">
-                            <ion-icon class="icon-kecil" name="document-outline"></ion-icon>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="row card-main uploading">
-                            <div class="col-3 align-self-center">
-                                <ion-icon class="icon-card" name="cloud-upload-outline"></ion-icon>
-                            </div>
-                            <div class="col-9 ket-card align-self-center">
-                                <h6 class="bold">Uploading Document</h6>
-                                <p>7.09/108.98 GB</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card-cloud text-center style-opacity">
-                            <ion-icon class="icon-cloud" name="cloud-upload-outline"></ion-icon>
-                            <p class="text-center">1,73/ 2.09 GB</p>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="team-meeting style-opacity">
-                            <div class="row card-main meeting ">
-                                <div class="col-3 align-self-center">
-                                    <ion-icon class="icon-card" name="calendar-clear-outline"></ion-icon>
-                                </div>
-                                <div class="col-9 ket-card align-self-center">
-                                    <h6><b>Team Meeting</b></h6>
-                                    <p>2:30 PM 15 Apr 2020</p>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Login</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <label for="username">Username</label>
+                                        <input type="text" name="username" id="username" placeholder="Masukkan username anda"><br>
+                                        <label for="password">Password</label>
+                                        <input type="password" name="password" id="password" placeholder="masukkan password anda">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn-nav btn-signin" id="btn-login" onclick="login()"
+                                            data-bs-dismiss="modal">Login</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="person d-flex ps-4 pb-3">
-                                <div class="item-person">JM</div>
-                                <div class="item-person">AC</div>
-                                <div class="item-person">KD</div>
-                                <div class="item-person">+8</div>
-                            </div>
                         </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="row card-main ab style-opacity">
-                            <div class="col-3 icon align-self-center">
-                                <div class="icon-card">AB</div>
-                                <div class="notif">2</div>
-                            </div>
-                            <div class="col-9 ket-card align-self-center">
-                                <h6><b>Anna Brooks</b></h6>
-                                <p>Hi, how are you doing today?</p>
-                            </div>
-                            <p class="time">2:09 PM</p>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="row card-main js style-opacity">
-                            <div class="col-3 icon align-self-center">
-                                <div class="icon-card">JS</div>
-                                <div class="notif">3</div>
-                            </div>
-                            <div class="col-9 ket-card align-self-center">
-                                <h6><b>John Smith</b></h6>
-                                <p>Hello, are you available for a pro...</p>
-                            </div>
-                            <p class="time">11:02 AM</p>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="row card-main ms style-opacity">
-                            <div class="col-3 align-self-center">
-                                <div class="icon-card">
-                                    <ion-icon name="bookmark-outline"></ion-icon>
-                                </div>
-                            </div>
-                            <div class="col-9 ket-card align-self-center">
-                                <h6><b>Message Saved</b></h6>
-                                <p>You have successfully saved this message</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="card card-small chat style-opacity">
-                            <ion-icon class="icon-kecil" name="chatbox-outline"></ion-icon>
-                        </div>
-                    </div>
                 </div>
+                </form>
             </div>
-        </div> <!-- END BANNER -->
+    </div>
+    </nav>
+    <!-- END NAVBAR -->
 
-        <!-- EXTRA INFO -->
-        <div class="extra-info d-flex justify-content-between">
-            <div class="row card-main cloud-based">
-                <div class="col-3 align-self-center">
-                    <ion-icon class="icon-card" name="cloud-outline"></ion-icon>
+    <!-- BANNER -->
+    <div class="row banner align-items-center">
+        <div class="col-4 left-side">
+            <h1><b>Business Communications Reinvented</b></h1>
+            <p>Start communicating with your business team more efficiently with our app.</p>
+            <button class="btn-getTheApp">Get the app</button>
+        </div>
+        <div class="col-8 right-side">
+            <div class="row">
+                <div class="col-12 style-opacity">
+                    <div class="card card-small">
+                        <ion-icon class="icon-kecil" name="document-outline"></ion-icon>
+                    </div>
                 </div>
-                <div class="col-9 ket-card align-self-center">
-                    <h6 class="bold">Cloud based</h6>
-                    <p>All your messages are always backed up.</p>
+                <div class="col-6">
+                    <div class="row card-main uploading">
+                        <div class="col-3 align-self-center">
+                            <ion-icon class="icon-card" name="cloud-upload-outline"></ion-icon>
+                            <img class="icon-border" src="img/Stroke-1per4.png" alt="">
+                        </div>
+                        <div class="col-9 ket-card align-self-center">
+                            <h6 class="bold">Uploading Document</h6>
+                            <p>7.09/108.98 GB</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="row card-main secured">
-                <div class="col-3 align-self-center">
-                    <ion-icon class="icon-card" name="lock-closed-outline"></ion-icon>
+                <div class="col-6">
+                    <div class="card-cloud text-center style-opacity">
+                        <ion-icon class="icon-cloud" name="cloud-upload-outline"></ion-icon>
+                        <img class="icon-border" src="img/Stroke-3per4.png" alt="">
+                        <p class="text-center">1,73/ 2.09 GB</p>
+                    </div>
                 </div>
-                <div class="col-9 ket-card align-self-center">
-                    <h6 class="bold">Secured</h6>
-                    <p>All your messages are stored very securely.</p>
+                <div class="col-6">
+                    <div class="team-meeting style-opacity">
+                        <div class="row card-main meeting ">
+                            <div class="col-3 align-self-center">
+                                <ion-icon class="icon-card" name="calendar-clear-outline"></ion-icon>
+                            </div>
+                            <div class="col-9 ket-card align-self-center">
+                                <h6><b>Team Meeting</b></h6>
+                                <p>2:30 PM 15 Apr 2020</p>
+                            </div>
+                        </div>
+                        <div class="person d-flex ps-4 pb-3">
+                            <div class="item-person">JM</div>
+                            <div class="item-person">AC</div>
+                            <div class="item-person">KD</div>
+                            <div class="item-person">+8</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row card-main ab style-opacity">
+                        <div class="col-3 icon align-self-center">
+                            <div class="icon-card">AB</div>
+                            <div class="notif">2</div>
+                        </div>
+                        <div class="col-9 ket-card align-self-center">
+                            <h6><b>Anna Brooks</b></h6>
+                            <p>Hi, how are you doing today?</p>
+                        </div>
+                        <p class="time">2:09 PM</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row card-main js style-opacity">
+                        <div class="col-3 icon align-self-center">
+                            <div class="icon-card">JS</div>
+                            <div class="notif">3</div>
+                        </div>
+                        <div class="col-9 ket-card align-self-center">
+                            <h6><b>John Smith</b></h6>
+                            <p>Hello, are you available for a pro...</p>
+                        </div>
+                        <p class="time">11:02 AM</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row card-main ms style-opacity">
+                        <div class="col-3 align-self-center">
+                            <div class="icon-card">
+                                <ion-icon name="bookmark-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="col-9 ket-card align-self-center">
+                            <h6><b>Message Saved</b></h6>
+                            <p>You have successfully saved this message</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card card-small chat style-opacity">
+                        <ion-icon class="icon-kecil" name="chatbox-outline"></ion-icon>
+                    </div>
                 </div>
             </div>
         </div>
+    </div> <!-- END BANNER -->
+
+    <!-- EXTRA INFO -->
+    <div class="extra-info d-flex justify-content-between">
+        <div class="row card-main cloud-based">
+            <div class="col-3 align-self-center">
+                <ion-icon class="icon-card" name="cloud-outline"></ion-icon>
+            </div>
+            <div class="col-9 ket-card align-self-center">
+                <h6 class="bold">Cloud based</h6>
+                <p>All your messages are always backed up.</p>
+            </div>
+        </div>
+        <div class="row card-main secured">
+            <div class="col-3 align-self-center">
+                <ion-icon class="icon-card" name="lock-closed-outline"></ion-icon>
+            </div>
+            <div class="col-9 ket-card align-self-center">
+                <h6 class="bold">Secured</h6>
+                <p>All your messages are stored very securely.</p>
+            </div>
+        </div>
+    </div>
     </div>
     <!--End extra info-->
 
@@ -238,7 +311,7 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="col section-2-right justify-content-md-center">
                 <div class="section-2-title">
                     <p> Use our app to send messages to your team </p>
@@ -251,14 +324,14 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="section-2-transform middle">
             <p> Transform your communications </p>
         </div>
         <div class="section-2-transform-sub middle">
             <p> Our mobile app is the only thing you need to change the way you communicate with your team </p>
         </div>
-    
+
         <div class="features-2 middle mx-auto row">
             <div class="col-3">
                 <div class="upload-doc">
@@ -282,7 +355,7 @@
                     <i class="fa-regular fa-message"></i>
                 </div>
             </div>
-            <div class="col"  style="margin-left: 99px;">
+            <div class="col" style="margin-left: 99px;">
                 <div class="row">
                     <div class="icon">
                         <i class="fa-regular fa-file"></i>
@@ -379,7 +452,7 @@
                 <div class="row">
                     <div class="cloud">
                         <div class="row">
-                            <div class="rounded-circle" >
+                            <div class="rounded-circle">
                                 <i class="fa-solid fa-cloud-arrow-up"></i>
                             </div>
                         </div>
@@ -390,208 +463,211 @@
                 </div>
             </div>
         </div>
-    <!--End product features-->
+        <!--End product features-->
 
-    <!--About-->
+        <!--About-->
 
-    <div class="container">
-        <section id="about" class="About">
-            <div class="row about align-items-center justify-content-center">
-                <div class="col-4 left-section">
-                    <h1><b>Increase the efficiency within your company</b></h1>
-                    <p>Our app is the great way for you to start getting more tasks done.</p>
-                    <button class="btn-app">Get The App</button>
-                </div>
-                <div class="col-8 right-section">
-                    <div class="row item-right-section">
-                        <div class="col-6">
-                            <div class="row card-utama daily-standup">
-                                <div class="col-3">
-                                    <ion-icon class="kartu-icon" name="calendar-clear-outline"></ion-icon>
-                                </div>
-                                <div class="col-9 detail-card">
-                                    <h6><b>Daily Standup</b></h6>
-                                    <p>2:30 PM 15 Apr 2020</p>
-                                </div>
-                                <div class="person d-flex">
-                                    <p class="item-day">KU</p>
-                                    <p class="item-day">MG</p>
-                                    <p class="item-day">AI</p>
-                                    <p class="item-day">+29</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="row card-utama marketing-call">
-                                <div class="col-3">
-                                    <ion-icon class="kartu-icon" name="calendar-clear-outline"></ion-icon>
-                                </div>
-                                <div class="col-9 detail-card">
-                                    <h6><b>Marketing Emails</b></h6>
-                                    <p>8:30 AM 28 Apr 2020</p>
-                                </div>
-                                <div class="person d-flex">
-                                    <p class="item-day">MC</p>
-                                    <p class="item-day">KY</p>
-                                    <p class="item-day">Aj</p>
+        <div class="container">
+            <section id="about" class="About">
+                <div class="row about align-items-center justify-content-center">
+                    <div class="col-4 left-section">
+                        <h1><b>Increase the efficiency within your company</b></h1>
+                        <p>Our app is the great way for you to start getting more tasks done.</p>
+                        <button class="btn-app">Get The App</button>
+                    </div>
+                    <div class="col-8 right-section">
+                        <div class="row item-right-section">
+                            <div class="col-6">
+                                <div class="row card-utama daily-standup">
+                                    <div class="col-3">
+                                        <ion-icon class="kartu-icon" name="calendar-clear-outline"></ion-icon>
+                                    </div>
+                                    <div class="col-9 detail-card">
+                                        <h6><b>Daily Standup</b></h6>
+                                        <p>2:30 PM 15 Apr 2020</p>
+                                    </div>
+                                    <div class="person d-flex">
+                                        <p class="item-day">KU</p>
+                                        <p class="item-day">MG</p>
+                                        <p class="item-day">AI</p>
+                                        <p class="item-day">+29</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-6 style-opacity">
-                            <div class="row card-utama marketing-call">
-                                <div class="col-3">
-                                    <ion-icon class="kartu-icon" name="calendar-clear-outline"></ion-icon>
-                                </div>
-                                <div class="col-9 detail-card ">
-                                    <h6><b>Marketing Call</b></h6>
-                                    <p>4:45 PM 30 May 2020</p>
-                                </div>
-                                <div class="person d-flex">
-                                    <p class="item-day">CO</p>
-                                    <p class="item-day">VN</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 style-opacity">
-                            <div class="row card-utama project-meeting">
-                                <div class="col-3">
-                                    <ion-icon class="kartu-icon" name="calendar-clear-outline"></ion-icon>
-                                </div>
-                                <div class="col-9 detail-card">
-                                    <h6><b>Project Meeting</b></h6>
-                                    <p>5:45 PM 1 Jun 2020</p>
-                                </div>
-                                <div class="person d-flex">
-                                    <p class="item-day">TR</p>
-                                    <p class="item-day">DE</p>
-                                    <p class="item-day">PB</p>
-                                    <p class="item-day">+2</p>
+                            <div class="col-6">
+                                <div class="row card-utama marketing-call">
+                                    <div class="col-3">
+                                        <ion-icon class="kartu-icon" name="calendar-clear-outline"></ion-icon>
+                                    </div>
+                                    <div class="col-9 detail-card">
+                                        <h6><b>Marketing Emails</b></h6>
+                                        <p>8:30 AM 28 Apr 2020</p>
+                                    </div>
+                                    <div class="person d-flex">
+                                        <p class="item-day">MC</p>
+                                        <p class="item-day">KY</p>
+                                        <p class="item-day">Aj</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-6 style-opacity">
-                            <div class="row card-utama presentation">
-                                <div class="col-3">
-                                    <ion-icon class="kartu-icon" name="calendar-clear-outline"></ion-icon>
-                                </div>
-                                <div class="col-9 detail-card">
-                                    <h6><b>Presentation</b></h6>
-                                    <p>10:15 AM 2 Jul 2020</p>
-                                </div>
-                                <div class="person d-flex">
-                                    <p class="item-day">TR</p>
-                                    <p class="item-day">DE</p>
-                                    <p class="item-day">PB</p>
-                                    <p class="item-day">+2</p>
+                            <div class="col-6 style-opacity">
+                                <div class="row card-utama marketing-call">
+                                    <div class="col-3">
+                                        <ion-icon class="kartu-icon" name="calendar-clear-outline"></ion-icon>
+                                    </div>
+                                    <div class="col-9 detail-card ">
+                                        <h6><b>Marketing Call</b></h6>
+                                        <p>4:45 PM 30 May 2020</p>
+                                    </div>
+                                    <div class="person d-flex">
+                                        <p class="item-day">CO</p>
+                                        <p class="item-day">VN</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-6 style-opacity">
-                            <div class="row card-utama sales-call">
-                                <div class="col-3">
-                                    <ion-icon class="kartu-icon" name="calendar-clear-outline"></ion-icon>
+                            <div class="col-6 style-opacity">
+                                <div class="row card-utama project-meeting">
+                                    <div class="col-3">
+                                        <ion-icon class="kartu-icon" name="calendar-clear-outline"></ion-icon>
+                                    </div>
+                                    <div class="col-9 detail-card">
+                                        <h6><b>Project Meeting</b></h6>
+                                        <p>5:45 PM 1 Jun 2020</p>
+                                    </div>
+                                    <div class="person d-flex">
+                                        <p class="item-day">TR</p>
+                                        <p class="item-day">DE</p>
+                                        <p class="item-day">PB</p>
+                                        <p class="item-day">+2</p>
+                                    </div>
                                 </div>
-                                <div class="col-9 detail-card">
-                                    <h6><b>Sales Call</b></h6>
-                                    <p>12:30 PM 5 May 2020</p>
+                            </div>
+                            <div class="col-6 style-opacity">
+                                <div class="row card-utama presentation">
+                                    <div class="col-3">
+                                        <ion-icon class="kartu-icon" name="calendar-clear-outline"></ion-icon>
+                                    </div>
+                                    <div class="col-9 detail-card">
+                                        <h6><b>Presentation</b></h6>
+                                        <p>10:15 AM 2 Jul 2020</p>
+                                    </div>
+                                    <div class="person d-flex">
+                                        <p class="item-day">TR</p>
+                                        <p class="item-day">DE</p>
+                                        <p class="item-day">PB</p>
+                                        <p class="item-day">+2</p>
+                                    </div>
                                 </div>
-                                <div class="person d-flex">
-                                    <p class="item-day">TR</p>
-                                    <p class="item-day">DE</p>
-                                    <p class="item-day">PB</p>
-                                    <p class="item-day">+2</p>
+                            </div>
+                            <div class="col-6 style-opacity">
+                                <div class="row card-utama sales-call">
+                                    <div class="col-3">
+                                        <ion-icon class="kartu-icon" name="calendar-clear-outline"></ion-icon>
+                                    </div>
+                                    <div class="col-9 detail-card">
+                                        <h6><b>Sales Call</b></h6>
+                                        <p>12:30 PM 5 May 2020</p>
+                                    </div>
+                                    <div class="person d-flex">
+                                        <p class="item-day">TR</p>
+                                        <p class="item-day">DE</p>
+                                        <p class="item-day">PB</p>
+                                        <p class="item-day">+2</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!--End About Section-->
+            <!--End About Section-->
 
-        <!--Pricing-->
+            <!--Pricing-->
 
-        <section id="pricing">
-            <div class="title-pricing">
-                <h1><b>Explore our simple pricing</b></h1>
-                <p>We offer one of the most competitive prices on the market for everyone.</p>
-            </div>
+            <section id="pricing">
+                <div class="title-pricing">
+                    <h1><b>Explore our simple pricing</b></h1>
+                    <p>We offer one of the most competitive prices on the market for everyone.</p>
+                </div>
 
-            <div class="content-pricing d-flex justify-content-evenly">
-                <div class="card item-card text-center" style="width: 18rem;">
-                    <div class="card-body">
-                        <p class="card-title">Basic</p>
-                        <p class="card-text"><b>$9</b></p>
-                        <p class="card-text2">Per Month</p>
-                        <a href="#" class="btn-LearnMore">Learn More</a>
+                <div class="content-pricing d-flex justify-content-evenly">
+                    <div class="card item-card text-center" style="width: 18rem;">
+                        <div class="card-body">
+                            <p class="card-title">Basic</p>
+                            <p class="card-text"><b>$9</b></p>
+                            <p class="card-text2">Per Month</p>
+                            <a href="#" class="btn-LearnMore">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="card item-card-2 text-center" style="width: 18rem;">
+                        <div class="card-body">
+                            <p class="card-title">Premium</p>
+                            <p class="card-text"><b>$29</b></p>
+                            <p class="card-text2">Per Month</p>
+                            <a href="#" class="btn-GetStarted">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="card item-card text-center" style="width: 18rem;">
+                        <div class="card-body">
+                            <p class="card-title">Enterprise</p>
+                            <p class="card-text"><b>$129</b></p>
+                            <p class="card-text2">Per Month</p>
+                            <a href="#" class="btn-LearnMore">Learn More</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card item-card-2 text-center" style="width: 18rem;">
-                    <div class="card-body">
-                        <p class="card-title">Premium</p>
-                        <p class="card-text"><b>$29</b></p>
-                        <p class="card-text2">Per Month</p>
-                        <a href="#" class="btn-GetStarted">Get Started</a>
-                    </div>
-                </div>
-                <div class="card item-card text-center" style="width: 18rem;">
-                    <div class="card-body">
-                        <p class="card-title">Enterprise</p>
-                        <p class="card-text"><b>$129</b></p>
-                        <p class="card-text2">Per Month</p>
-                        <a href="#" class="btn-LearnMore">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!--End Pricing-->
-
-    <!-- FOOTER -->
-    <footer class="container">
-        <div class="footer-email">
-            <h1>Sign up to our newsletter</h1>
-            <p>Receive latest news, updates, discounts and many other things every week.</p>
-            <input type="text" placeholder="Enter your email address">
-            <button title="email" type="button" class="email-button">
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-            </button>
+            </section>
         </div>
-        <div class="footer-info">
-            <div class="row">
-                <div class="col-3">
-                    <h5>Startup.io</h5>
-                    <p class="copyright">© 2020 - All rights reserved</p>
-                </div>
-                <div class="col-3">
-                    <h5>Product</h5>
-                    <p>benefits</p>
-                    <p>Feedback</p>
-                    <p>Features</p>
-                </div>
-                <div class="col-3">
-                    <h5>About</h5>
-                    <p>Company</p>
-                    <p>Team</p>
-                </div>
-                <div class="col-3">
-                    <h5>Support</h5>
-                    <p>Get help</p>
-                    <p>Term of service</p>
+
+        <!--End Pricing-->
+
+        <!-- FOOTER -->
+        <footer class="container">
+            <div class="footer-email">
+                <h1>Sign up to our newsletter</h1>
+                <p>Receive latest news, updates, discounts and many other things every week.</p>
+                <input type="text" id="email" placeholder="Enter your email address">
+                <button onclick="saveToLocalstorage()" title="email" type="button" class="email-button">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+            </div>
+            <div class="footer-info">
+                <div class="row">
+                    <div class="col-3">
+                        <h5>Startup.io</h5>
+                        <p class="copyright">© 2020 - All rights reserved</p>
+                    </div>
+                    <div class="col-3">
+                        <h5>Product</h5>
+                        <p>benefits</p>
+                        <p>Feedback</p>
+                        <p>Features</p>
+                    </div>
+                    <div class="col-3">
+                        <h5>About</h5>
+                        <p>Company</p>
+                        <p>Team</p>
+                    </div>
+                    <div class="col-3">
+                        <h5>Support</h5>
+                        <p>Get help</p>
+                        <p>Term of service</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-- END FOOTER -->
+        </footer>
+        <!-- END FOOTER -->
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <script src="script.js"></script>
+    </body>
 
 </html>
