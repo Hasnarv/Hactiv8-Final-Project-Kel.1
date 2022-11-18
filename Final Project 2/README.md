@@ -1,11 +1,13 @@
 # Final Project 2
-**Website : GROW** <br>
 **Kelas : INPG-KS06** <br>
 **Kelompok 1** <hr>
 Team Produksi :
 * INPG-KS06-013 Amellia Veronica Agustin
 * INPG-KS06-006 Hasna Rizki Violina
 * INPG-KS06-024 Nadya Dinda Aulia
+
+### Link Deployment
+Link [Klik Disini]()
 ### A. Landing Project Details
 Let us see what is there in the application:
 1. Section A : Header & Banner by Hasna Rizki Violina
@@ -13,8 +15,7 @@ Let us see what is there in the application:
 3. Section C : About & Pricing by Amellia Veronica Agustin
 4. Section D : Contact & Footer by Hasna Rizki Violina & Amellia Veronica Agustin
 ### B. Penerapan HTML & CSS
-
-
+![htmljs](https://user-images.githubusercontent.com/72425456/202675044-c8550d57-d323-49db-8522-617cd0cccf73.jpg)
 ### C. Penerapan JS
 1. Login
 <br>Fitur ini menyimpan data username dan password ke local storage.
@@ -26,5 +27,4 @@ Let us see what is there in the application:
 <br>Fitur ini menyimpan data email ke local storage.
 ![contact](https://user-images.githubusercontent.com/72425456/202673079-d8257111-a11b-4e50-b3c4-349e94a99679.jpg)
 
-### Link Deployment
-Link GROW [Klik Disini]()
+
