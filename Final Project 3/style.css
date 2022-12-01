@@ -155,6 +155,99 @@
 }
 /* End Our valueable services */
 
+
+/* Our Work */
+.work{
+  background-color:#020E35;
+  height: fit-content;
+  padding: 20px 30px 20px 30px;
+}
+
+.work .title h6{
+  font-size: 40px;
+  font-weight: 400;
+  color: #ffff;
+}
+
+.work .line{
+  background-color: #E73587;
+  width: 9%;
+  height: 3px;
+  margin: auto;
+}
+
+.work .card-img{
+  width: 587px;
+  height: 390px;
+}
+
+.work .work-row{
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+h6.text-title{
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+h6.text-sub-title{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 3px;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+h6.text-description{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.align-right{
+  text-align: right;
+}
+
+.align-right-card{
+  margin-left: auto; 
+  margin-right: 0;
+}
+
+.bottom{
+  text-align: bottom;
+  top: 50%;
+  justify-content:end;
+  align-items:flex-end;
+  vertical-align:bottom;
+}
+
+.color-purple{
+  background-color: #8C32F0;
+  padding-top: 20px;
+}
+
+.color-pink{
+  background-color: #E73587;
+  padding-top: 40px;
+}
+
+.color-yellow{
+  background: #F09532;
+}
+
+.color-blue{
+  padding-top: 60px;
+  background-color: #32D6F0;
+}
+/* End Our Work */
+
 /* CONTACT */
 .contact {
   margin: 3em 0;
