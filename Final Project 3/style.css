@@ -119,8 +119,8 @@
 /* Our valueable services */
 
 .service {
-  margin-top: 5rem;
-  padding-bottom: 2rem;
+  margin-top: 5em;
+  padding-bottom: 4em;
   background-image: linear-gradient(
     to top,
     #020e35 0%,
@@ -142,13 +142,6 @@
   height: 3px;
   margin: auto;
 }
-
-/* .content-about .card-item{
-  margin-top: 50px;
-  width: 18rem;
-  padding: 1em;
-  border: none;
-} */
 
 .btn.btn-card-service{
   background: linear-gradient(to right,#e54686, #821cb5);
@@ -174,7 +167,8 @@
 .carousel-control-prev-icon, .carousel-control-next-icon {
   background: linear-gradient(to right,#e54686, #821cb5);
   border-radius: 100%;
-  padding-top: 3px;
+  border: 2px solid white;
+  padding-top: 2px;
 }
 .carousel-control-prev-icon {
   margin-right: 100px;
@@ -229,7 +223,7 @@ h6.text-sub-title{
   line-height: 19px;
   letter-spacing: 3px;
   color: #FFFFFF;
-  margin-bottom: 16px;
+  margin-bottom: 50px;
 }
 
 h6.text-description{
@@ -238,6 +232,12 @@ h6.text-description{
   line-height: 20px;
   color: #FFFFFF;
   margin-bottom: 16px;
+}
+h6.text-description.ganjil {
+  width: 65%;
+}
+h6.text-description.genap {
+  margin-left: 15.5em;
 }
 
 .align-right{
