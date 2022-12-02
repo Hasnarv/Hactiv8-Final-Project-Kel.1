@@ -49,7 +49,7 @@
     color: white;
   }
 
-/* BANNER */
+/* ========== BANNER ========== */
 .banner {
     margin-top: 7.5rem;
   }
@@ -74,8 +74,7 @@
     padding: 0.5em 1.5em;
   }
 
-  /* About us */
-
+  /* ========== About us ========== */
 .about {
   margin-top: 10em;
   margin-bottom: 1rem;
@@ -104,20 +103,13 @@
   color: #020e35;
 }
 
-/* .about .about-text {
-  position: relative;
-  bottom: 10rem; 
-} */
-
 .about .description {
   width: 45%;
   margin: 30px auto;
 }
-
 /* End about us section */
 
-/* Our valueable services */
-
+/* ========== Our valueable services ========== */
 .service {
   margin-top: 5em;
   padding-bottom: 4em;
@@ -179,7 +171,7 @@
 /* End Our valueable services */
 
 
-/* Our Work */
+/* ========== Our Work ========== */
 .work{
   background-color:#020E35;
   height: fit-content;
@@ -277,7 +269,7 @@ h6.text-description.genap {
 }
 /* End Our Work */
 
-/* CONTACT */
+/* ========== CONTACT ========== */
 .contact {
   margin: 3em 0;
 }
@@ -304,7 +296,7 @@ h6.text-description.genap {
 }
 /* END CONTACT */
 
-/* FOOTER */
+/* ========== FOOTER ========== */
 #footer {
   padding: 5px 0;
   color: white;

@@ -7,7 +7,7 @@ Team Produksi :
 * INPG-KS06-024 Nadya Dinda Aulia
 
 ### Link Deployment
-Link [Klik Disini](https://final-project2.netlify.app/ )
+Link [Klik Disini](https://kel1-project3.netlify.app/)
 ### A. Landing Project Details
 Let us see what is there in the application:
 1. Section A : Header & Banner by Hasna Rizki Violina
