@@ -43,7 +43,7 @@ input.input-keyword {
   border: none;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0px 5px 20px rgba(40, 40, 40, 0.2);
-  backdrop-filter: blur(3px);
+  /* backdrop-filter: blur(3px); */
   border-radius: 20px;
 }
 
