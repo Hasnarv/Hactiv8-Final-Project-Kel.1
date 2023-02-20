@@ -3,9 +3,8 @@
 **Kelas : INPG-KS06** <br>
 **Kelompok 1** <hr>
 Team Produksi :
-* INPG-KS06-013 Amellia Veronica Agustin
 * INPG-KS06-006 Hasna Rizki Violina
-* INPG-KS06-024 Nadya Dinda Aulia
+* INPG-KS06-013 Amellia Veronica Agustin
 
 ### Link Deployment
 Link [Klik Disini](https://weatherforecast-kel1.netlify.app/)
